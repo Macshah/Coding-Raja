@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+body{
+    margin: 0;
+    transition: scroll-behavior 1s ease-in-out;
+}
+.header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 500;
+    
+}
+.Name{
+    color: white;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+    font-weight: bold;
+}
+.left-sec{
+  display: flex;
+  align-items: center;
+   
+}
+.right-sec{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.about,.education,.projects,.contact{
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+    font-weight: bold;
+}
+.img-box{
+  
+    position: relative;
+    margin-top: 70px;
+    left: 42%;
+    width: 280px;
+    border-radius: 8px;
+    transition: box-shadow 0.25s;
+    background-color: white;
+}
+
+.img-box:hover .hello{
+    color: white;
+    
+    font-weight: bold;
+}
+.hello{
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: lightpink;
+  
+}
+.intro-circle1{
+    width: 300px;
+    height:300px;
+    border: 10px;
+    border-radius: 160px;
+    background-color: lightblue;
+    position: absolute;
+    left:65%;
+    top:40%;
+    transition: box-shadow 0.25s , background-color 0.25s,font-family 1s;;
+    
+}
+.intro1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 35px;
+    font-weight: bold;
+    
+    
+   
+}
+.intro-circle1:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+    background-color: bisque;
+    z-index: 100;
+}
+.intro-circle1:hover .intro1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:cadetblue;
+    
+}
+
+.intro-circle2{
+    width: 400px;
+    height:400px;
+    border: 10px;
+    border-radius: 200px;
+    background-color: lightblue;
+    position: absolute;
+    left:70%;
+   top:60%;
+    transition: box-shadow 0.45s , background-color 0.45s,font-family 0.45s;;
+    
+}
+.intro2{
+    text-align: center;
+    padding-top: 160px;
+    font-size: 30px;
+    font-weight: bold;
+    
+    
+   
+}
+.intro-circle2:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+    background-color: bisque;
+}
+.intro-circle2:hover .intro2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:cadetblue;
+}
+.intro-circle3{
+    width: 300px;
+    height:300px;
+    border: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left:72%;
+    top: 8%;
+    transition: box-shadow 0.45s , background-color 0.45s,font-family 0.45s;;
+    
+}
+.doodle{
+    width: 500px;
+    border-radius: 50%;
+    transition: box-shadow 0.45s,z-index 0.25s;
+}
+.doodle:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+    z-index: 200;
+}
+
+.intro-circle-img{
+    width: 300px;
+    height:300px;
+    border: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: 30.5%;
+    border-radius: 50%;
+    background-color: white;
+    transition: fliter 0.45s;
+}
+.myimg{
+    width: 700px;
+    border-radius: 50%;
+   
+}
+.intro-circle-img:hover .myimg{
+    filter: blur(8px);
+}
+.intro-circle4{
+    width: 400px;
+    height:400px;
+    border: 10px;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    border-radius: 50%;
+    background-color: lightblue;
+    transition: box-shadow 0.45s , background-color 0.45s,font-family 0.45s;;
+}
+.intro3{
+    text-align: center;
+    padding-top: 140px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.intro-circle4:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+    background-color: bisque;
+    z-index: 100;
+}
+.intro-circle4:hover .intro3{
+    font-family: Arial, Helvetica, sans-serif;
+    color:cadetblue;
+    
+}
+.intro-circle5{
+    width: 500px;
+    height:500px;
+    border: 10px;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    border-radius: 50%;
+    background-color: lightblue;
+    transition: box-shadow 0.45s , background-color 0.45s,font-family 0.45s;;
+}
+.intro4{
+    text-align: center;
+    padding-top: 195px;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+.intro-circle5:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+    background-color: bisque;
+}
+.intro-circle5:hover .intro4{
+    font-family: Arial, Helvetica, sans-serif;
+    color:cadetblue;
+}
+.insta{
+    width: 60px;
+    height: 60px;
+    border: 10px;
+    position: absolute;
+    bottom: 70%;
+    left: 1%;
+    border-radius: 50%;
+    background-color: lightblue;
+    transition: box-shadow 0.45s;
+}
+.insta:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+}
+.id{
+    width: 60px;
+    border-radius: 50%;
+   
+}
+.git{
+    width: 60px;
+    height: 60px;
+    border: 10px;
+    position: absolute;
+    bottom: 62%;
+    left: 1%;
+    border-radius: 50%;
+    background-color: lightblue;
+    transition: box-shadow 0.45s;
+}
+.git:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+}
+.gd{
+    width: 60px;
+    border-radius: 50%;
+   
+}
+.link{
+    width: 50px;
+    height: 50px;
+    border: 10px;
+    position: absolute;
+    bottom: 13%;
+    left: 97%;
+    border-radius: 50%;
+    background-color: white;
+    transition: box-shadow 0.45s;
+}
+.link:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+}
+.ld{
+    width: 50px;
+    border-radius: 50%;
+   
+}
+.twit{
+    width: 50px;
+    height: 50px;
+    border: 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 97%;
+    border-radius: 50%;
+    background-color: white;
+    transition: box-shadow 0.45s;
+}
+.twit:hover{
+    box-shadow:4px 4px 7px rgba(0, 0, 0, 0.4);
+}
+.td{
+    padding-top: 10px;
+    width: 50px;
+    border-radius: 50%;
+   
+}
+#skill{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    top: 100%;
+    left:45%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    
+    
+    
+}
+a{
+    text-decoration: none;
+    color: lightcoral;
+    position: relative;
+    cursor: default;
+}
+a::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: lightcoral;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    
+}
+a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.skill1{
+    width: 300px;
+    height: 365px;
+    border-radius: 5px;
+    position: relative;
+    background-image: linear-gradient(lightpink,lightblue);
+    left:-510%;
+    top:-10%;
+    transition: all 0.5s;
+    
+}
+.sinfo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14.6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+    
+}
+.html{
+    width: 130px;
+    padding-top: 12px;
+    padding-left: 87px;
+    display: inline;
+}
+.text{
+    display: inline;
+    padding-left: 120px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+                                          
+} 
+
+.skill-circle{
+    background-image: white;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    top:112%;
+}
+
+.skill-circle2{
+    background-image: white;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    top:120%;
+    
+}
+.skill2{
+    width: 300px;
+    height: 365px;
+    border-radius: 5px;
+    position: absolute;
+    background-image: linear-gradient(lightpink,lightblue);
+    left:110%;
+    top:-160%;
+    transition: all 0.5s;
+    opacity: 1;
+    
+}
+.css{
+    width: 130px;
+    padding-top: 12px;
+    padding-left: 87px;
+    display: inline;
+}
+
+.text2{
+    display: inline;
+    padding-left: 120px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+                                          
+} 
+
+.skill1:hover,.skill2:hover,.skill3:hover,.skill4:hover,.skill5:hover,.skill6:hover{
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(lightblue,lightpink);
+}
+
+
+.skill-circle3{
+    background-image: white;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    top:128%;
+}
+.skill3{
+    width: 300px;
+    height: 365px;
+    border-radius: 5px;
+    position: absolute;
+    background-image: linear-gradient(lightpink,lightblue);
+    left:-1119%;
+    top:-310%;
+    transition: all 0.5s;
+    opacity: 1;
+   
+}
+
+.js{
+    width: 130px;
+    padding-top: 12px;
+    padding-left: 87px;
+    display: inline;
+}
+.text3{
+    display: inline;
+    padding-left: 80px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+                                          
+} 
+
+
+
+
+.skill-circle4{
+    background-image: white;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    top:136%;
+}
+.skill4{
+    width: 300px;
+    height: 365px;
+    border-radius: 5px;
+    position: relative;
+    background-image: linear-gradient(lightpink,lightblue);
+    left:720%;
+    top:-460%;
+    transition: all 0.5s;
+    opacity: 1;
+    
+}
+.java{
+    width: 130px;
+    padding-top: 12px;
+    padding-left: 90px;
+    display: inline;
+}
+.text4{
+    display: inline;
+    padding-left: 115px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+                                          
+} 
+
+
+
+
+
+.skill-circle5{
+    background-image:white;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    top:144%;
+}
+.skill5{
+    width: 300px;
+    height: 365px;
+    border-radius: 5px;
+    position: relative;
+    background-image: linear-gradient(lightpink,lightblue);
+    left:-1725%;
+    top:-610%;
+    transition: all 0.5s;
+    opacity: 1;
+
+}
+.blender{
+    width: 130px;
+    padding-top: 12px;
+    padding-left: 77px;
+    display: inline;
+}
+.text5{
+    display: inline;
+    padding-left: 100px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+                                          
+} 
+
+
+
+
+.skill-circle6{
+    background-image: white;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    top:152%;
+}
+.skill6{
+    width: 300px;
+    height: 365px;
+    border-radius: 5px;
+    position: relative;
+    background-image: linear-gradient(lightpink,lightblue);
+    left:1330%;
+    top:-760%;
+    transition: all 0.5s;
+
+}
+.ds{
+    width: 130px;
+    padding-top: 12px;
+    padding-left: 87px;
+    display: inline;
+}
+.text6{
+    display: inline;
+    padding-left: 60px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+                                          
+} 
+
+
+
+
+
+#project{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    top: 163.5%;
+    left:45%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: lightcoral;
+    
+    
+}
+.window{
+    background-image:linear-gradient(#09203F,#537895);
+    position: absolute;
+    left: 24%;
+    top:175%;
+    width:1060px;
+    height: 600px;
+    border-radius: 10px;
+    
+  
+}
+.pname{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -50%;
+    left: 60%;
+    font-size: 30px;
+    transition: all 0.45s;
+    font-weight: bold;
+    background-image: linear-gradient( #f32170,
+    #ff6b08);
+    width: 320px;
+    transition: all 0.5s;
+    
+}
+.pname:hover,.pname1:hover,.pname2:hover{
+    background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.info{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -50%;
+    left: 60%;
+    font-size: 17px;
+    transition: all 0.45s;
+    width: 320px;
+    background-image: linear-gradient( #f32170,
+    #ff6b08);
+    text-align: justify;
+}
+.info:hover,.info1:hover,.info2:hover{
+    background-image:  linear-gradient( #09203F,#537895);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.left{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 205%;
+    left:20.5%;
+    background-color: white;
+    border-color: grey;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.right{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 205%;
+    left:80%;
+   background-color: white;
+   border-color: grey;
+   border-radius: 5px;
+   transition: all 0.5s;
+}
+.right:hover,.left:hover{
+    background-image:linear-gradient(#C33764,#1D2671) ;
+    border-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    
+}
+.pname1{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -40%;
+    left: 4%;
+    font-size: 30px;
+    transition: all 0.45s;
+    font-weight: bold;
+    background-image: linear-gradient( #f32170,
+    #ff6b08);
+    width: 230px;
+    transition: all 0.5s;
+    
+}
+.info1{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -40%;
+    left: 4%;
+    font-size: 17px;
+    transition: all 0.45s;
+    width: 230px;
+    background-image: linear-gradient( #f32170,
+    #ff6b08);
+    text-align: justify;
+}
+.pname2{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -40%;
+    left: 70%;
+    font-size: 30px;
+    transition: all 0.45s;
+    font-weight: bold;
+    background-image: linear-gradient( #f32170,
+    #ff6b08);
+    width: 300px;
+    transition: all 0.5s;
+    
+}
+.info2{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -40.3%;
+    left:  70%;
+    font-size: 17px;
+    transition: all 0.45s;
+    width:  300px;
+    background-image: linear-gradient( #f32170,
+    #ff6b08);
+    text-align: justify;
+}
+.pname3{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -35%;
+    left: 3%;
+    font-size: 30px;
+    transition: all 0.45s;
+    font-weight: bold;
+    background-image: linear-gradient( #f32170,
+    #ff6b08);
+    width: 260px;
+    transition: all 0.5s;
+}
+.info3{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -35%;
+    left: 3%;
+    font-size: 17px;
+    transition: all 0.45s;
+    width: 260px;
+    background-image: linear-gradient( #f32170,
+    #ff6b08);
+    text-align: justify;
+}
+#contactme{
+    background-color:#d7d7b8;
+    position: absolute;
+    top: 250%;
+    width: 100%;
+    height: 800px;
+}
+.cont{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: lightcoral;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+}
+.yname{
+    position: relative;
+    width: 480px;
+    top:2%;
+    left: 23%;
+    height: 24px;
+    background-image: linear-gradient(to top,bisque 50%,black 50%);
+    background-size: 100% 200%;
+    background-position: top left;
+    border-radius: 5px;
+    border: none;
+    
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: all 1s;
+    
+}
+.yname:focus,.mail:focus,.msg:focus{
+    box-shadow:  4px 4px 8px rgba(0,0,0,0.7);
+    background-position: bottom left;
+    color: black;
+}
+.yname:focus::placeholder,.mail:focus::placeholder,.msg:focus::placeholder{
+    color: black;
+}
+::placeholder{
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 4px;
+}
+.mail{
+    position: relative;
+    width: 480px;
+    top:10%;
+    left: -2.7%;
+    height: 24px;
+    background-image: linear-gradient(to top,bisque 50%,black 50%);
+    background-size: 100% 200%;
+    background-position: top left;
+    border-radius: 5px;
+    border: none;
+    transition: all 1s;
+    
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.msg{
+    position: relative;
+    width: 480px;
+    top:22%;
+    left: -28.3%;
+    height: 80px;
+    background-image: linear-gradient(to top,bisque 50%,black 50%);
+    background-size: 100% 200%;
+    background-position: top left;
+    border-radius: 5px;
+    border: none;
+    transition: all 1s;
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.send{
+    position: absolute;
+    left: 23%;
+    top:50%;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-image: linear-gradient(to top,bisque 50%,black 50%);
+    background-size: 100% 200%;
+    background-position: top left;
+    transition: box-shadow 0.85s,;
+
+}
+.send:hover{
+    background-position: bottom left;
+    color: black;
+    cursor: pointer;
+    box-shadow:  4px 4px 8px rgba(0,0,0,0.7);
+}
+.send:active{
+    opacity: 0.5;
+}
+.mymail{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;position: absolute;
+    left: 60%;
+}
+.place{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;position: absolute;
+    left: 60%;
+    top: 30%;
+}
+.nav{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+}
+.nav::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
