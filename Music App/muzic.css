@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(0deg,black,green);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+.container{
+    background-image:linear-gradient(0deg,grey,lightpink) ;
+    display: flex;
+    height: 370px;
+    padding: 70px 30px;
+    position: relative;
+    z-index: 100;
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow:  8px 8px 10px rgba(0,0,0,0.7);
+    
+}
+.song-img{
+    position: relative;
+    width: 240px;
+}
+
+.song-img img{
+    border-radius: 5px;
+    object-fit: cover;
+    height: 240px;
+    width:inherit ;
+    position: relative;
+    left: -10%;
+    bottom:5%;
+    animation: rotate 3s linear infinite;
+    
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    
+}
+.btn{
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 25px;
+     position: relative;
+    top: 20%;
+    transition: all 0.25s;
+
+}
+.btn:hover,.big-btn:hover{
+    box-shadow:   4px 4px 8px rgba(0,0,0,0.7);;
+}
+.big-btn{
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin:0 25px;
+    font-size: 30px;
+    position: relative;
+    top: 20%;
+    transition: all 0.25s;
+  
+}
+
+.song-info{
+    background-color:  rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    position: absolute;
+    top: 20%;
+    left: 250px;
+    width:300px;
+    height: 100px;
+    padding: 10px 10px 10px 150px;
+}
+
+.song-info p{
+    margin: 0  -140px;
+}
+.progress-info{
+    background-color: black;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 35px -140px;
+    height: 4px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.progress-bar{
+    background-color: white;
+    border-radius: 7px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+    box-sizing: border-box;
+}

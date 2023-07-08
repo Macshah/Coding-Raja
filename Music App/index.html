@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="muzic.css">
+    
+    <title>Muzic!</title>
+</head>
+<body>
+    
+   <p class="intro">Muzic Player!</p>
+   <div class="container" id="container">
+        <div class="song-info">
+            
+            <p id="title"></p>
+            <p id="artist">Alice Merton</p>
+            <p id="album"></p>
+            <p id="genre"></p>
+            <div class="progress-info" id="progress-info">
+                
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+        <div class="song-img" id="song-img">
+            <img src="Source/No Roots.jpg" id="artwork" class="song-img">
+        </div>
+
+        <audio src="Source/No Roots.mp3" id="song"></audio>
+          
+       <div class="nav">
+            <button id="prev" class="btn">&#10094;</button>
+            <button id="play" class="big-btn">&#9654;</button>
+            <button id="next" class="btn">&#10095;</button>
+        </div>
+   </div>
+   <script src="muzic.js"></script>
+</body>
+</html>
